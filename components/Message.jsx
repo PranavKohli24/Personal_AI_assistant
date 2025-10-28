@@ -58,7 +58,7 @@ const Message = ({role,content}) => {
 
             {
                 role==='user'?(
-                    <span className='text-white/90'>
+                    <span className='text-white'>
                         <Markdown components={{
       code: CodeBlock,
       p: ({ children }) => <div>{children}</div>
@@ -71,7 +71,7 @@ const Message = ({role,content}) => {
                     <>
                     <Image src={assets.prompt_icon} alt='' className='h-11 w-11 p-1 border border-white/15 rounded-full'/>
 
-                    <div className={`space-y-4 w-full overflow-scroll text-l md:text-l ${firaCode.className} text-white/90`}>
+                    <div className={`space-y-4 w-full overflow-scroll text-l md:text-l ${firaCode.className} text-white`}>
                         <Markdown   components={{
     code: CodeBlock,
     p: ({ children }) => <div>{children}</div>  // avoids <pre> inside <p>

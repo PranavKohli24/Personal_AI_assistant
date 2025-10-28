@@ -23,6 +23,7 @@ import qrcode from "./qrcode.png";
 import three_dots from "./three_dots.svg";
 import new_icon from "./new_icon.svg";
 import prompt_icon from "./prompt_icon.png";
+import noise from "./noise.png"
 
 export const assets = {
   arrow_icon,
@@ -49,5 +50,6 @@ export const assets = {
   qrcode,
   three_dots,
   new_icon,
-  prompt_icon
+  prompt_icon,
+  noise
 };
