@@ -65,7 +65,17 @@ export default function Home() {
 
   return (
     // CHANGE 1: Replace h-screen with dynamic height
-    <div className="flex bg-[#292a2d] text-white" style={{ height: 'calc(var(--vh, 1vh) * 100)' }}>
+    // <div className="flex bg-[#2C2A29] text-white" style={{ height: 'calc(var(--vh, 1vh) * 100)' }}>
+    <div
+  className="flex text-white"
+  style={{
+    height: 'calc(var(--vh, 1vh) * 100)',
+    backgroundImage: `url(${assets.noise.src})`,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+  }}
+>
       <Sidebar expand={expand} setExpand={setExpand} />
 
       {/* CHANGE 2: Add overflow-hidden to main container */}
@@ -100,7 +110,7 @@ export default function Home() {
         {!user && (
           <button
             onClick={openSignIn}
-            className={`absolute top-20 right-6 px-6 py-3 bg-gradient-to-r from-[#0F2540] to-[#5A7EBB] text-white font-semibold rounded-xl shadow-md transform transition-all duration-500 ease-out
+            className={`absolute top-16 right-6 px-6 py-3 bg-gradient-to-r from-[#0F2540] to-[#5A7EBB] text-white font-semibold rounded-xl shadow-md transform transition-all duration-500 ease-out
     ${logoAnimated ? "translate-x-0 opacity-100" : "translate-x-24 opacity-0"}
     hover:scale-105 hover:shadow-xl hover:from-sky-500 hover:to-sky-700`}
           >
@@ -136,7 +146,7 @@ export default function Home() {
               }`}
               style={{ transitionDelay: logoAnimated ? '200ms' : '0ms' }}
             >
-              {user ? 'Ask me anything or just chat!' : 'Signup to continue!'}
+              {user ? 'Ask me anything or just chat!' : ''}
             </p>
           </div>
         )}
@@ -180,7 +190,7 @@ export default function Home() {
             }`}
             style={{ transitionDelay: logoAnimated ? '400ms' : '0ms' }}
           >
-            Hi {user.firstName}! Ask me anything about Pranav or just chat
+            Hi {user.firstName}! Ask me anything about Pranav or just vibe
           </p>
         ) : (
           <p
@@ -191,7 +201,7 @@ export default function Home() {
             }`}
             style={{ transitionDelay: logoAnimated ? '300ms' : '0ms' }}
           >
-            Hello there! Ask anything about Pranav or just chat
+            Hello there! Ask anything about Pranav or just vibe
           </p>
         )}
       </div>
