@@ -123,7 +123,7 @@ export default function Home() {
             <Image
               src={assets.logo_icon}
               alt=""
-              className={`h-21 w-21 md:h-26 md:w-25  rounded-full transition-all duration-1000 ease-out ${
+              className={`h-22 w-21 md:h-27 md:w-25  rounded-full transition-all duration-1000 ease-out ${
                 mounted 
                   ? "scale-100 opacity-100 animate-logo-grow" 
                   : "scale-0 opacity-0"
@@ -194,7 +194,7 @@ export default function Home() {
           </p>
         ) : (
           <p
-            className={`text-sm mt-2 text-gray-400 text-center transition-all duration-700 ease-out ${
+            className={`text-sm mt-2 text-gray-300 text-center transition-all duration-700 ease-out ${
               logoAnimated 
                 ? "opacity-100 translate-y-0" 
                 : "opacity-0 translate-y-2"
