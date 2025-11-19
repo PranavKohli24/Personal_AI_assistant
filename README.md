@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1>AI Twin</h1>
 
-## Getting Started
+<p>The idea: I built a version of me that can think, talk, and code the way I do.<br>
+Call it my AI twin.
+<h2>What it does</h2>
+<ul>
+  <li>Talks how I speak and respond</li>
+  <li>Writes code the way I usually write it</li>
+  <li>Handles chats, tasks, and reasoning like a cloned brain</li>
+  <li>Fully interactive web app with auth, sessions, and memory</li>
+</ul>
 
-First, run the development server:
+<h2>Tech behind it</h2>
+<ul>
+  <li>Node.js (API logic)</li>
+  <li>Next.js + React (frontend, routing, UI)</li>
+  <li>Clerk (auth, sessions, OAuth)</li>
+  <li>NLP pipeline for style + behavior modeling</li>
+  <li>OpenRouter models for generation</li>
+  <li>Realtime syncing between user prompts and AI responses</li>
+</ul>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<h2>How it works (short version)</h2>
+<ul>
+  <li>User logs in through Clerk</li>
+  <li>Backend pulls their session and routes the input</li>
+  <li>NLP layer shapes the prompt to match my tone + reasoning patterns</li>
+  <li>OpenRouter handles generation</li>
+  <li>UI streams the response in real time</li>
+</ul>
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+<h2>Why I built it</h2>
+<p>Wanted to see if I could turn my own thinking style into a working system instead of a gimmick.<br>
+This repo is the result.</p>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<h2>Future ideas</h2>
+<ul>
+  <li>Memory layer that adapts based on long-term sessions</li>
+  <li>Voice input + voice cloning using Whisper and Eleven Labs</li>
+  <li>More tools the AI twin can use (photo, files)</li>
+</ul>
