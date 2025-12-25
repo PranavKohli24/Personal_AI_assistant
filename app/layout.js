@@ -14,6 +14,16 @@ const inter = Inter({
 export const metadata = {
   title: "Pranav Kohli | Project",
   description: "An AI version of me — a digital twin that talks and thinks like Pranav Kohli.",
+  openGraph: {
+    images: [
+      {
+        url: "/meta_image.png",
+        width: 1200,
+        height: 630,
+        alt: "Project thumbnail"
+      }
+    ]
+  }
 };
 
 export default function RootLayout({ children }) {
