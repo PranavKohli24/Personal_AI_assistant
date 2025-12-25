@@ -1,5 +1,5 @@
 <h1>AI Twin</h1>
-
+<img src="meta_image.png" height="280px" width="280px" alt="image"/>
 <p>The idea: I built a version of me that can think, talk, and code the way I do.<br>
 Call it my AI twin.
 <h2>What it does</h2>
