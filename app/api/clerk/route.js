@@ -36,6 +36,7 @@ export async function POST(req){
 
     switch (type) {
   case 'user.created':
+    console.log('User logged in:', data.user_id);
     await User.create({
       _id: data.id,
       email: data.email_addresses[0].email_address,
