@@ -111,14 +111,14 @@ const PromptBox = ({isLoading,setIsLoading}) => {
 
 
             }else{
-                toast.error(data.message)
+                toast.error("error in prompt box",data.message)
                 setPrompt(promptCopy);
 
             }
 
             
         }catch(err){
-            toast.error(err.message)
+            toast.error("error in prompt box",err.message)
             setPrompt(promptCopy);
                 
         }finally{
