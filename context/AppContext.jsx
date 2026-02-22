@@ -65,6 +65,7 @@ export const AppContextProvider=({children})=>{
 
             }else{
                 toast.error("data.message -- error in app context here")
+                console.log(data.message)
             }
 
         }catch(err){
