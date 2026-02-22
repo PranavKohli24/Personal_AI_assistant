@@ -5,15 +5,13 @@ import {auth} from "@clerk/nextjs/server";
 
 import { NextResponse } from "next/server";
 
-export const dynamic = 'force-dynamic';
-
 export async function GET(req){
 
     try{
         const {userId}=auth();
 
         if (!userId){
-            return NextResponse.json({success:false, message:'User not Authenticated'})
+            return NextResponse.json({success:false, message:'User iss not Authenticated'})
         }
 
         //connect to the database and fetch all chats for the user.
