@@ -39,9 +39,10 @@ export const AppContextProvider=({children})=>{
     const fetchUserChats= async()=>{
         try{
             const token =await getToken();
-            const {data}=await axios.get('/api/chat/get',{headers:{
-                Authorization:`Bearer ${token}`
-            }})
+            const { data } = await axios.get('/api/chat/get');
+            // const {data}=await axios.get('/api/chat/get',{headers:{
+            //     Authorization:`Bearer ${token}`
+            // }})
 
             if(data.success){
                 console.log(data.data);
