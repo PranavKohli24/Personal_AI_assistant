@@ -43,10 +43,10 @@ const ChatLabel = ({openMenu,setOpenMenu, id, name, selectedChatId}) => {
         setOpenMenu({id:0,open:false})
         toast.success(data.message)
       }else{
-        toast.error("Problem in chatLabel",data.message)
+        toast.error("Problem in chatLabel")
       }
     }catch(err){
-      toast.error("Problem in chatlabel",err.message)
+      toast.error("Problem in chatlabel")
     }
   }
 
@@ -64,10 +64,10 @@ const ChatLabel = ({openMenu,setOpenMenu, id, name, selectedChatId}) => {
         setOpenMenu({id:0, open:false})
         toast.success(data.message)
       }else{
-        toast.error("problem here in chatlabel",data.message)
+        toast.error("problem here in chatlabel")
       }
     }catch(err){
-      toast.error(err.message)
+      toast.error("err.message")
     }
   }
 

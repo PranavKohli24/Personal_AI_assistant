@@ -31,7 +31,7 @@ export const AppContextProvider=({children})=>{
             fetchUserChats();
 
         }catch(err){
-            toast.error("error in appcontext",err.message)
+            toast.error("error in appcontext")
         }
     }
 
@@ -64,11 +64,11 @@ export const AppContextProvider=({children})=>{
 
 
             }else{
-                toast.error(data.message)
+                toast.error("data.message")
             }
 
         }catch(err){
-            toast.error("error in app context",err.message)
+            toast.error("error in app context")
         }
     }
 
